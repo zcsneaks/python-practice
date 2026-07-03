@@ -1,0 +1,35 @@
+What it Does
+Everything as before but now it calculates total price
+Can factor in quantities of items ordered
+
+What it Demonstrates
+Shows math functions in Python and how to incorporate math in conversation
+Doing math between different variables
+Translating between strings and integers
+
+Potential improvements in the Future
+Handling invalid quantity input from customer
+Adding plurals into conversation based on what customer states
+
+
+Script
+
+print("Hello, welcome to Zach's coffee shop!")
+
+
+Menu = "\nBlack Coffee S/M/L/XL\nMacchiato S/M/L\nLondon Fog S/M/L\n"
+
+CustomerName = input("What is your name?\n" )
+print("\nHello " + CustomerName + ", thank you so much for coming in today! Here is our menu.\n" + Menu)\
+
+order = input("What can I get started for you " + CustomerName +"?\n")
+
+print("\nYou got it " + CustomerName + ". ")
+
+numberordered = input("How many would you like?\n")
+price = 5
+total = price * int(numberordered)
+
+print("Your total is: $" + str(total) + "\n")
+
+print("You got it. I will have your " + numberordered + " " + order + " right out in a few minutes!")
