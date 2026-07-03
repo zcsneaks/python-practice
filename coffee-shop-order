@@ -1,0 +1,21 @@
+What it Does
+It greets and takes a customer's order for Zach's coffee shop
+
+What it Demonstrates
+The practicality of variables 
+
+Potential Improvements
+We could add input validation for invalid menu items
+
+
+  Script
+print("Hello, welcome to Zach's coffee shop!")
+
+CustomerName = input("What is your name?\n" )
+Menu = "\nBlack Coffee S/M/L/XL\nMacchiato S/M/L\nLondon Fog S/M/L\n"
+print("\nHello " + CustomerName + ", thank you so much for coming in today! Here is our menu.\n" + Menu)\
+
+CustomerOrder = input("What can I get started for you " + CustomerName +"?\n")
+
+print("\nYou got it " + CustomerName + ". I will have your " + CustomerOrder + " right out in a few minutes!" )
+
