@@ -1,0 +1,38 @@
+What it Does
+Added a blocklist where if you have a certain name you are blocked from ordering.
+
+What it Demonstrates
+if/else logic
+basic control flow exit using exit() to halt anymore code
+The difference between = and == in identifying variables and determing accuracy
+
+What to Improve On
+Menu Validation for determining a customer's order is actually available.
+Input validation for if a customer types in the word three for example over the number 3.
+Case Sensitivity for the blocklist.
+
+Script
+
+print("Hello, welcome to Zach's coffee shop!")
+
+
+Menu = "\nBlack Coffee S/M/L/XL\nMacchiato S/M/L\nLondon Fog S/M/L\n"
+
+CustomerName = input("What is your name?\n" )
+
+if CustomerName == "Dan":
+  print("Sorry, we can't serve you here.")
+  exit()
+else:
+  print("\nHello " + CustomerName + ", thank you so much for coming in today! Here is our menu.\n" + Menu)
+  
+order = input("What can I get started for you " + CustomerName +"?\n")
+print("\nYou got it " + CustomerName + ". ")
+
+numberordered = input("How many would you like?\n")
+price = 5
+total = price * int(numberordered)
+
+print("Your total is: $" + str(total) + "\n")
+
+print("You got it. I will have your " + numberordered + " " + order + " right out in a few minutes!")
