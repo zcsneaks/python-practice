@@ -1,0 +1,15 @@
+What it Does
+Using the not logical operator and some small boolean script testing
+
+What it Demonstrates
+type() inspection
+combing not with the results to show the flip kind of like a not not 
+introducing a new type of dataclass
+
+me = "Zach"
+me == "Zach"
+print(me == "Zach")
+print(type(me == "Zach"))
+print(me == "NIck")
+print(not me == "Nick")
+print(type(me))
