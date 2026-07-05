@@ -1,0 +1,36 @@
+What it Does
+Extends script from v1, but now we're experimenting with deletion of values instead of adding them.
+
+What it Demonstrates
+.clear() empties a list
+.remove(value) deletes the matching item
+.pop(index) removes the item from the list based on its index value
+
+
+Code
+
+camping_list = ["tent", "sleeping bag", "coffee", "water", "smore kit", "grill", "knife", "Starlink", "snacks", "food"]
+
+camp_site = ["Crystal Lake", 404, 89.3, 10, True]
+
+camping_list.append("toilet paper")
+
+camping_list.extend(["bidet", "flavored water"])
+
+camping_list = camping_list + ["ATVs"]
+
+camping_list.insert(0, "gas")
+
+camping_list.insert(-1, "cutlery")
+
+camp_site.clear()
+
+camping_list.remove("tent")
+
+camping_list.remove("sleeping bag")
+
+print("This item was just deleted: " + camping_list.pop(4))
+
+camping_list.pop(4)
+
+print(camping_list)
