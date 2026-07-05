@@ -1,0 +1,60 @@
+What it Does
+Adds more names to the blocklist as well as a good-deeds verification to ensure they are truly an "evil" person before admitting them
+
+What it Demonstrates
+Logical operators basics (or, and)
+Compounded booleans in evil_status =="Yes" and gooddeeds_status < 4
+
+What to Improve on
+Long or chain in both the blocked list as well as the long price list for menu items
+
+Code
+
+print("Hello, welcome to Zach's coffee shop!")
+
+Menu = "\nBlack Coffee\nMacchiato\nLatte\nEspresso\nCappuccino\nFrappuccino\n"
+
+CustomerName = input("What is your name?\n" )
+
+if CustomerName == "Iron Man" or  CustomerName == "Thor" or CustomerName == "Loki":
+  evil_status = input("Are you evil " + CustomerName + "?\n")
+  gooddeeds_status = int(input("How many good deeds have you done today?\n"))
+  if evil_status == "Yes" and gooddeeds_status < 4 :
+    print("Sorry, you're not welcome here.")
+    exit()
+  else:
+    print("\nSorry about that " + CustomerName + ", thank you so much for coming in today! Here is our menu.\n" + Menu)
+else:
+  print("\nHello " + CustomerName + ", thank you so much for coming in today! Here is our menu.\n" + Menu)
+  
+order = input("What can I get started for you?\n")
+
+if order == "Frappuccino":
+  price = 8
+  whipped_cream_status = input("Would you like to add whipped cream for an extra $2?")
+  if whipped_cream_status == "Yes":
+    price = 10
+  else:
+    price = 8
+elif order == "Black Coffee":
+  price = 3
+elif order == "Espresso":
+  price = 2
+elif order == "Macchiato":
+  price = 5
+elif order == "Cappuccino":
+  price = 4
+elif order == "Latte":
+  price = 5
+else:
+  print("Sorry, we can't make that here.")
+  price = 0
+
+print("\nYou got it " + CustomerName + ". ")
+
+numberordered = input("How many would you like?\n")
+total = price * int(numberordered)
+
+print("Your total is: $" + str(total) + "\n")
+
+print("You got it. I will have your " + numberordered + " " + order + " right out in a few minutes!")
