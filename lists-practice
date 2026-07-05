@@ -1,0 +1,37 @@
+What it Does
+Shows the power of using lists over strings and how to use them by indexing
+
+What it Demonstrates
+Shows the practicality of using lists over strings so we can reference individual items and not the entire dataset
+Negative indexing for referrencing the end items
+Lists aren't restricted to a single type of data
+
+What to Explore Next
+split(), append(), remove(), len() are all functions that would flow nicely into the next batch of learning
+
+Code
+
+#STRING ONLY
+
+camping_stuff = ("tent, sleeping bag, grill, firestarter, firewood, water, food, air mattress, smore kit, instant coffee")
+
+
+#PYTHON LIST
+
+camping_list = ["tent", "sleeping bag", "grill", "firestarter", "firewood", "water", "food", "air mattress", "smore kit", "instant coffee"]
+print(camping_list)
+
+camp_site = ["Crystal Lake", 404, 89.3, True]
+
+
+
+me = camping_list[-1]
+
+you = camping_list[-2]
+
+
+
+print(me)
+print(you)
+
+print(camping_list)
