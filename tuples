@@ -1,0 +1,23 @@
+What it Does
+Compares mutability between a list and a tuple by attempting same operations
+
+What is Demonstrates
+list mutability being able to modify a list after being created
+tuple immutability crashing the code because it can't be changed
+tuples are also faster because they take up less storage space
+
+What to Explore Next
+
+Code:
+
+alist = ["Network", "Zach", 100]
+
+alist[0] = "Chuck"
+
+print(alist)
+
+atuple = ("bernard", "hackwell", 92)
+
+atuple[0] = "Chuck" #Can't work because it can't be changed.
+
+print("bernard", "hackwell", 92) == atuple
